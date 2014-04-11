@@ -50,6 +50,7 @@ html,body {
 #caption {
   width: 496px;
   height: 278px;
+  line-height: 278px;
   background-color: white;
   text-align: center;
   text-transform:uppercase;

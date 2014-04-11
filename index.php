@@ -6,8 +6,7 @@
       <?php the_post_thumbnail(); ?>
     </div>
     <div id='caption'>
-      <p><?php echo get_bloginfo('name'); ?></p>
-      <p><?php echo get_bloginfo('description'); ?></p>
+      <p><?php echo get_bloginfo('name'); ?><?php echo get_bloginfo('description'); ?></p>
     </div>
   </div>
   
