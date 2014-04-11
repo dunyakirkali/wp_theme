@@ -48,17 +48,15 @@ html,body {
 }
 
 #caption {
-  position: relative;
-  top:0;
-  left:0;
-  margin-left: auto;
-  margin-right: auto;
   width: 496px;
   height: 278px;
   background-color: white;
   text-align: center;
-  vertical-align: middle;
   text-transform:uppercase;
+  position:relative;
+  left:50%;
+  top:50%;
+  margin:-139px 0 0 -248px;
 }
 
 #right {
@@ -97,7 +95,7 @@ html,body {
 
 .current-menu-item {
   border-top-style: solid;
-  border-top-width: thick;
+  border-top-width: 2px;
 }
 
 #menu-menu a &:active {
