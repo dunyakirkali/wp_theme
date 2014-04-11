@@ -24,10 +24,9 @@ html,body {
   float: left;
   width: 50%;
   height: 100%;
-  background: url(http://www.gratuit-en-ligne.com/telecharger-gratuit-en-ligne/telecharger-image-wallpaper-gratuit/image-wallpaper-animaux/img/images/image-wallpaper-animaux-autruche.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+  
+  background-image: url(http://www.gratuit-en-ligne.com/telecharger-gratuit-en-ligne/telecharger-image-wallpaper-gratuit/image-wallpaper-animaux/img/images/image-wallpaper-animaux-autruche.jpg);
+  background-repeat: no-repeat;
   background-size: cover;
   
   text-align: center;
@@ -55,3 +54,11 @@ html,body {
   display: inline;  
   margin: 0;  
 }  
+
+#copyright {
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:60px;   /* Height of the footer */
+   background:#6cf;
+}
