@@ -1,5 +1,7 @@
 <html>
 <head>
-  <?php wp_enqueue_style( 'style' ); ?>
+  <title>Ilana</title>
+  
+  <link href='style.css' rel='stylesheet' type='text/css' media='screen'>
 </head>
 <body>
