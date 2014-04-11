@@ -14,20 +14,30 @@ http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 .
 */
 
-body, #container {
-  height: 480px;
+html,body {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
 }
 
 #left {
   float: left;
   width: 50%;
   height: 100%;
-  background-color: red;
   background: url(http://www.gratuit-en-ligne.com/telecharger-gratuit-en-ligne/telecharger-image-wallpaper-gratuit/image-wallpaper-animaux/img/images/image-wallpaper-animaux-autruche.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  
+  text-align: center;
+}
+
+#caption {
+  margin: auto;
+  width: 496px;
+  height: 278px;
+  background-color: white;
 }
 
 #right {
@@ -36,3 +46,12 @@ body, #container {
     height: 100%;    
     background-color: blue;    
 }
+
+#menu-menu {
+  list-style-type: none;
+}
+
+#menu-menu li {  
+  display: inline;  
+  margin: 0;  
+}  
