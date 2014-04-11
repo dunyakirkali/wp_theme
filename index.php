@@ -2,6 +2,7 @@
 
 <div id='container'>
   <div id='left'>
+    <?php the_post_thumbnail(); ?>
     <div id='caption'>
       <p><?php echo get_bloginfo('name'); ?></p>
       <p>Atelier de couture</p>

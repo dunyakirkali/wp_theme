@@ -24,13 +24,12 @@ html,body {
 #left {
   float: left;
   width: 50%;
-  height: 100%;
-  
-  background-image: url(http://www.gratuit-en-ligne.com/telecharger-gratuit-en-ligne/telecharger-image-wallpaper-gratuit/image-wallpaper-animaux/img/images/image-wallpaper-animaux-autruche.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  
+  height: 100%;  
   text-align: center;
+}
+
+#left img {
+  max-width:100%;
 }
 
 #caption {
