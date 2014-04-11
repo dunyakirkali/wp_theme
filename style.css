@@ -13,3 +13,26 @@ Like WordPress, this work is released under GNU General Public License, version 
 http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 .
 */
+
+#container {
+  height: 480px;
+}
+
+#left {
+  float: left;
+  width: 50%;
+  height: 100%;
+  background-color: red;
+  background: url(http://www.gratuit-en-ligne.com/telecharger-gratuit-en-ligne/telecharger-image-wallpaper-gratuit/image-wallpaper-animaux/img/images/image-wallpaper-animaux-autruche.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#right {
+    float: right;    
+    width: 50%;
+    height: 100%;    
+    background-color: blue;    
+}
