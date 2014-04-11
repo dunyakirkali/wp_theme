@@ -15,6 +15,7 @@ http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 */
 
 html,body {
+  font-family: 'Merriweather', serif;
   height: 100%;
   margin: 0px;
   padding: 0px;
@@ -37,17 +38,41 @@ html,body {
   width: 496px;
   height: 278px;
   background-color: white;
+  text-transform:uppercase;
 }
 
 #right {
-    float: right;    
-    width: 50%;
-    height: 100%;    
-    background-color: blue;    
+  float: right;    
+  width: 50%;
+  height: 100%;
+}
+
+#right-container {
+  width: 70%;
+  margin: auto;
 }
 
 #menu-menu {
   list-style-type: none;
+}
+
+#menu-menu a {  
+  color: inherit;
+  text-decoration: inherit;
+  cursor: inherit;
+} 
+
+.current-menu-item {
+  border-top-style: solid;
+  border-top-width: thick;
+}
+
+#menu-menu a &:active {
+  outline: none;
+}
+
+#menu-menu a &:focus {
+  outline: none;
 }
 
 #menu-menu li {  
@@ -56,9 +81,11 @@ html,body {
 }  
 
 #copyright {
-   position:absolute;
+   position:relative;
    bottom:0;
+   left: 0;
    width:100%;
    height:60px;   /* Height of the footer */
    background:#6cf;
+   text-align: center;
 }
