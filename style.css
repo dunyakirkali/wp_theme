@@ -73,8 +73,21 @@ html,body {
 }
 
 #menu-menu {
+  text-align: center;
   list-style-type: none;
+  background-color: #fc6;
 }
+
+.menu-item:after { 
+  content: "." ;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#menu-menu li:last-child {
+  background-color: blue;
+  content: "" !important;
+} 
 
 #menu-menu a {  
   color: inherit;
@@ -98,16 +111,11 @@ html,body {
 #menu-menu li {  
   display: inline;  
   margin: 0;  
+  width: 100%;
 }  
 
 #copyright {
-  display: table-cell; 
-  position: relative;
-  vertical-align: middle;
-  bottom:0;
-  left: 0;
-  min-width:100%;
-  height:60px;   /* Height of the footer */
+  width:100%;
   background:#6cf;
   text-align: center;
 }
