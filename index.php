@@ -12,7 +12,7 @@
   
   <div id='right'>
     <div id='right-container'>
-      <?php wp_nav_menu( array( 'theme_location' => 'top-menu' ) ); ?>
+      <?php wp_nav_menu('menu=top-menu&after=<span>.</span>'); ?>
     
       <div>
         <?php while(have_posts()) : the_post(); ?>
