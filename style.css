@@ -42,11 +42,31 @@ html,body {
 
 #second {
   height:100vh;
-  overflow-y:scroll;
-  overflow-x:hidden;  
+}
+
+@media only screen and (min-width: 40.063em) {
+  #second {
+    overflow-y:scroll;
+    overflow-x:hidden;  
+  }
 }
 
 /* MENU */
+
+.dropdown {
+  text-align:center;
+}
+
+#menu-row {
+  background-color:#F2F2F2;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  text-align:center;  
+}
+
+#menu-link {
+  text-align:center;
+}
 
 #menu-menu {
   background-color:#F2F2F2;
@@ -80,7 +100,7 @@ html,body {
   cursor: inherit;
 } 
 
-.current-menu-item a {
+#menu-menu-1 .current-menu-item a {
   border-top-style: solid;
   border-top-width: 2px;
 }

@@ -18,5 +18,4 @@
   <script src="<?php bloginfo('stylesheet_directory'); ?>/js/foundation/foundation.equalizer.js"></script>  
   <script src="<?php bloginfo('stylesheet_directory'); ?>/theme.js"></script>
 </head>
-<a name="top"></a>
 <body>
