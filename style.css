@@ -125,6 +125,8 @@ html,body {
 input {
   width: 100%;
   border: 0;
+  margin-top: 5px;  
+  margin-bottom: 5px;    
   background: #F2F2F2;
   color: #999999;
   height: 50px;
