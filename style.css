@@ -35,14 +35,16 @@ html,body {
 
 #first {
   background-size: cover !important;
+  min-height:100vh;
   padding:0;
   height:100vh;
 }
 
-/*#second {
+#second {
+  height:100vh;
   overflow-y:scroll;
   overflow-x:hidden;  
-}*/
+}
 
 /* MENU */
 
@@ -109,14 +111,6 @@ html,body {
   font-size: 3em;
 }
 
-/* Copyright */
-
-#copyright {
-  width:35%;
-  text-align: center;
-  position: fixed;
-  bottom: 0;
-}
 
 /* FORM */
 

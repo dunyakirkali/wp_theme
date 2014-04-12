@@ -12,7 +12,8 @@
 ?>
     
 <div class='row'>
-  <div id='first' class='columns small-12 medium-6 large-6' style="background: url('<?php echo $thumbnail; ?>') no-repeat center center fixed;">
+  
+  <div id='first' class='columns small-12 medium-6 large-6' style="background: url('<?php echo $thumbnail; ?>') no-repeat center center;">
     <div class='row' id="placeholder_1"></div>
     <div class='row'>
       <div class='columns small-10 medium-10 large-10 small-push-1 medium-push-1 large-push-1' id='caption'>
@@ -31,15 +32,20 @@
         <?php wp_nav_menu('menu=top-menu'); ?>
       </div>
     </div>
-    <div class='row' id="placeholder_3"></div>    
   </div>
   
-  <div id='second' class='columns small-12 medium-6 large-6'>
-    <div class='row hide-for-small'>    
+  <div class='columns small-12 medium-6 large-6' id='second'>
+    <div class='row hide-for-small hide-for-medium'>    
       <div class='columns small-12 medium-12 large-12'>
         <?php wp_nav_menu('menu=top-menu&after=<span>.</span>'); ?>
       </div>
     </div>
+    <div class='row show-for-medium'>    
+      <div class='columns small-10 medium-10 large-10 small-push-1 medium-push-1 large-push-1'>
+        <a href="#" data-dropdown="menu-menu-2"><?php the_title(); ?></a>
+        <?php wp_nav_menu('menu=top-menu'); ?>
+      </div>
+    </div>    
     <div class='row'>    
       <div class='columns small-10 medium-10 large-10 small-push-1 medium-push-1 large-push-1'>
         <?php while(have_posts()) : the_post(); ?>
