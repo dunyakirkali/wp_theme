@@ -64,7 +64,8 @@ html,body {
   float: right;    
   width: 50%;
   height: 100%;
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 #right-container {
@@ -75,7 +76,7 @@ html,body {
 #menu-menu {
   text-align: center;
   list-style-type: none;
-  background-color: #fc6;
+  padding: 0;
 }
 
 .menu-item span { 
