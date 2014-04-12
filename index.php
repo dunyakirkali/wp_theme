@@ -14,15 +14,12 @@
     <div id='right-container'>
       <?php wp_nav_menu('menu=top-menu&after=<span>.</span>'); ?>
     
-      <div>
-        <?php while(have_posts()) : the_post(); ?>
-          <div class='page'>
-            <h2><?php the_title(); ?></h2>
-            <?php the_content(); ?>
-          </div>
-        <?php endwhile; ?>
-      </div>
-    
+      <?php while(have_posts()) : the_post(); ?>
+        <div class='page'>
+          <h2><?php the_title(); ?></h2>
+          <?php the_content(); ?>
+        </div>
+      <?php endwhile; ?>
       <div id='copyright'>
         <p>© 2014 Mathilde, All Rights Reserved. Back to top</p>
       </div>
