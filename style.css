@@ -15,7 +15,7 @@ http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 */
 
 html,body {
-  font-family: 'Merriweather', serif;
+  font-family: 'Merriweather', serif !important;
   height: 100%;
   margin: 0px;
   padding: 0px;
@@ -25,70 +25,54 @@ html,body {
   text-align: center;
 }
 
-#left {
-  float: left;
-  width: 50%;
-  height: 100%;  
-  text-align: center;
-  display: table-cell;
-  vertical-align: middle;
+#placeholder_1 {
+  height: 25vh;
 }
 
-#image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 50%;
-  height: 100%;
+#placeholder_2 {
+  height: 25vh;
 }
 
-#left img {
-  max-height:100%;
-  max-width:100%;
+#first {
+  background-size: cover !important;
+  padding:0;
+  height:100vh;
 }
 
-#caption {
-  width: 496px;
-  height: 278px;
-  line-height: 278px;
-  background-color: white;
-  text-align: center;
-  text-transform:uppercase;
-  position:relative;
-  left:50%;
-  top:50%;
-  margin:-139px 0 0 -248px;
-}
+/*#second {
+  overflow-y:scroll;
+  overflow-x:hidden;  
+}*/
 
-#right {
-  float: right;    
-  width: 50%;
-  height: 100%;
-  overflow-y: scroll;
-  overflow-x: hidden;
-}
-
-#right-container {
-  width: 70%;
-  margin: auto;
-}
+/* MENU */
 
 #menu-menu {
+  background-color:#F2F2F2;
+  text-align: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+#mobile-menu {
+  background-color:#F2F2F2;
+}
+
+#menu-menu-1 {
   text-align: center;
   list-style-type: none;
   padding: 0;
 }
 
 .menu-item span { 
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 1px;
+  margin-right: 1px;
 }
 
-#menu-menu li:last-child span  {
+#menu-menu-1 li:last-child span  {
   display:none;
 }
 
-#menu-menu a {  
+#menu-menu-1 a {  
   color: inherit;
   text-decoration: inherit;
   cursor: inherit;
@@ -99,19 +83,33 @@ html,body {
   border-top-width: 2px;
 }
 
-#menu-menu a &:active {
+#menu-menu-1 a &:active {
   outline: none;
 }
 
-#menu-menu a &:focus {
+#menu-menu-1 a &:focus {
   outline: none;
 }
 
-#menu-menu li {  
+#menu-menu-1 li {  
   display: inline;  
-  margin: 0;  
-  width: 100%;
+  margin: 0;
 }  
+
+/* Caption */
+
+#caption {
+  background-color: white;
+  text-align: center;
+  text-transform: uppercase; 
+  height:25vh;
+}
+
+#site-title {
+  font-size: 3em;
+}
+
+/* Copyright */
 
 #copyright {
   width:35%;
@@ -120,7 +118,7 @@ html,body {
   bottom: 0;
 }
 
-/* Form */
+/* FORM */
 
 input {
   width: 100%;
