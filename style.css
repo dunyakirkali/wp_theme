@@ -64,6 +64,7 @@ html,body {
   float: right;    
   width: 50%;
   height: 100%;
+  overflow: scroll;
 }
 
 #right-container {
