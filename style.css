@@ -120,6 +120,28 @@ html,body {
   bottom: 0;
 }
 
+/* Form */
+
+input {
+  width: 100%;
+  border: 0;
+  background: #F2F2F2;
+  color: #999999;
+  height: 50px;
+}
+
+textarea {
+  color: #999999;
+  width: 100%;
+  border: 0;
+  background: #F2F2F2;
+}
+
+input[type="submit"] {
+  background: black;
+  color: white;
+}
+
 
 /*!
  *  Font Awesome 4.0.3 by @davegandy - http://fontawesome.io - @fontawesome
