@@ -14,11 +14,70 @@ http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 .
 */
 
-html,body {
-  font-family: 'Merriweather', serif !important;
-  height: 100%;
-  margin: 0px;
-  padding: 0px;
+
+/* TYPEFACE */
+@media only screen {
+  .site-title-font {
+    font-size: 1.6rem;
+    letter-spacing: 5.2px;  
+  }
+  
+  .site-subtitle-font {
+    font-size: 0.6rem;
+    letter-spacing: 4px;
+  }
+}
+
+@media only screen and (min-width: 40.063em) {
+  .site-title-font {
+    font-size: 2.3em;
+    letter-spacing: 8px;  
+  }
+
+  .site-subtitle-font {
+    font-size: 0.8rem;  
+    letter-spacing: 6.9px;
+  }
+}
+
+@media only screen and (min-width: 64.063em) {
+  .site-title-font {
+    font-size: 3em;
+    letter-spacing: 8px;  
+  }
+
+  .site-subtitle-font {
+    font-size: 1rem;  
+    letter-spacing: 8.2px;
+  }
+}
+
+
+.page-title-font {
+  
+}
+
+.mobile-menu-font {
+  
+}
+
+.navigation-font {
+  
+}
+
+.page-content-font {
+  
+}
+
+.menu-icon {
+  padding: 10px;
+  font-size: 1em;
+}
+
+/* ------ ------- ------- ------- ------- -*/
+
+#site-title {
+  margin-bottom: 0;
 }
 
 .page h2 {
@@ -35,13 +94,15 @@ html,body {
 
 #first {
   background-size: cover !important;
-  min-height:100vh;
-  padding:0;
-  height:100vh;
+  -moz-background-size: cover !important;
+  -webkit-background-size: cover !important;
+  min-height:100vh !important;
+  padding:0 !important;
+  height:100vh !important;
 }
 
 #second {
-  height:100vh;
+  height:100vh !important;
 }
 
 @media only screen and (min-width: 40.063em) {
@@ -52,6 +113,10 @@ html,body {
 }
 
 /* MENU */
+
+#large-menu {
+  margin-top: 5vh;
+}
 
 .dropdown {
   text-align:center;
@@ -76,6 +141,7 @@ html,body {
 }
 
 #mobile-menu {
+  height: 35px;
   background-color:#F2F2F2;
 }
 
@@ -124,36 +190,30 @@ html,body {
   background-color: white;
   text-align: center;
   text-transform: uppercase; 
-  height:25vh;
+  height:200px;
+  width:;
 }
-
-#site-title {
-  font-size: 3em;
-}
-
 
 /* FORM */
 
-input {
-  width: 100%;
-  border: 0;
-  margin-top: 5px;  
-  margin-bottom: 5px;    
-  background: #F2F2F2;
-  color: #999999;
-  height: 50px;
+input {   
+  background: #F2F2F2 !important;
+  color: #999999 !important;
+  border: 0 !important;  
 }
 
 textarea {
-  color: #999999;
-  width: 100%;
-  border: 0;
-  background: #F2F2F2;
+  color: #999999 !important;
+  background: #F2F2F2 !important;
+  border: 0 !important;  
 }
 
 input[type="submit"] {
-  background: black;
-  color: white;
+  background: black !important;
+  color: white !important;
+  width: 100% !important;
+  border: 0 !important;
+  height: 50px;
 }
 
 

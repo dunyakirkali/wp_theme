@@ -7,7 +7,6 @@
   
   <link rel="stylesheet" type="text/css" href='<?php bloginfo('stylesheet_directory'); ?>/foundation.css' />  
   <link href='<?php bloginfo('stylesheet_url'); ?>' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 480px)" href='<?php bloginfo('stylesheet_directory'); ?>/mobile.css' />
   
   <link href='http://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
   

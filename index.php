@@ -19,17 +19,17 @@
     <div class='row'>
       <div class='columns small-10 medium-10 large-10 small-push-1 medium-push-1 large-push-1' id='caption'>
         <div class='row'>
-          <p id='site-title'><?php echo get_bloginfo('name'); ?></p>
+          <p id='site-title' class='site-title-font'><?php echo get_bloginfo('name'); ?></p>
         </div>
         <div class='row'>
-          <p><?php echo get_bloginfo('description'); ?></p>
+          <p class='site-subtitle-font'><?php echo get_bloginfo('description'); ?></p>
         </div>
       </div>
     </div>
     <div class='row' id="placeholder_2"></div>    
     <div class='row show-for-small'>    
       <div id='mobile-menu' class='columns small-10 medium-10 large-10 small-push-1 medium-push-1 large-push-1'>
-        <span class='fa fa-2x fa-flag'></span><a class='dropdown' href="#" data-dropdown="menu-menu"><?php the_title(); ?></a>
+        <span class='fa fa-bars menu-icon'></span><a class='dropdown' href="#" data-dropdown="menu-menu"><?php the_title(); ?></a>
         <?php
           $defaults = array(
             'menu' => 'top-menu',
@@ -45,19 +45,19 @@
   
   <div class='columns small-12 medium-6 large-6' id='second'>
     <a name="top"></a>
-    <div class='row hide-for-small hide-for-medium'>    
+    <div class='row hide-for-small hide-for-medium' id='large-menu'>    
       <div class='columns small-12 medium-12 large-12'>
         <?php wp_nav_menu('menu=top-menu&after=<span>.</span>'); ?>
       </div>
     </div>
     <div class='row show-for-medium'>    
-      <div class='columns medium-6 medium-push-3' id="menu-row">
-        <div class='row' data-dropdown="menu-menu-2">    
+      <div class='columns medium-6 medium-push-3 mobile-menu-font' id="menu-row">
+        <div class='row'>    
           <div class='columns medium-2'>
-            <span class='fa fa-2x fa-flag'></span>
+            <span class='menu-icon fa fa-bars'></span>
           </div>
           <div class='columns medium-10' id='menu-link'>
-            <a href="#"><?php the_title(); ?></a>
+            <a href="#" data-dropdown="menu-menu-2"><?php the_title(); ?></a>
           </div>
           <?php wp_nav_menu('menu=top-menu'); ?>
         </div>
