@@ -28,7 +28,7 @@
     </div>
     <div class='row' id="placeholder_2"></div>    
     <div class='row show-for-small'>    
-      <div id='mobile-menu' class='columns small-10 medium-10 large-10 small-push-1 medium-push-1 large-push-1'>
+      <div class='columns small-10 medium-10 large-10 small-push-1 medium-push-1 large-push-1 mobile-menu'>
         <span class='fa fa-bars menu-icon'></span><a class='dropdown' href="#" data-dropdown="menu-menu"><?php the_title(); ?></a>
         <div data-dropdown-content>
           <?php wp_nav_menu('menu=top-menu'); ?>
@@ -45,14 +45,9 @@
       </div>
     </div>
     <div class='row show-for-medium'>    
-      <div class='columns medium-6 medium-push-3 mobile-menu-font' id="menu-row">
-        <div class='row'>    
-          <div class='columns medium-2'>
-            <span class='menu-icon fa fa-bars'></span>
-          </div>
-          <div class='columns medium-10' id='menu-link'>
-            <a href="#" data-dropdown="menu-menu-2"><?php the_title(); ?></a>
-          </div>
+      <div class='columns medium-6 medium-push-3 mobile-menu-font mobile-menu' id="menu-row">
+        <span class='fa fa-bars menu-icon'></span><a href="#" data-dropdown="menu-menu-2"><?php the_title(); ?></a>
+        <div data-dropdown-content>
           <?php wp_nav_menu('menu=top-menu'); ?>
         </div>
       </div>

@@ -1,9 +1,9 @@
 <!doctype html>
 <html class="no-js" lang="en">
   <head>
-  <title>Ilana's Dream'</title>
+  <title><?php echo get_bloginfo('name'); ?></title>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, height=device-height, target-densitydpi=device-dpi, initial-scale=1.0" />
   
   <link rel="stylesheet" type="text/css" href='<?php bloginfo('stylesheet_directory'); ?>/foundation.css' />  
   <link href='<?php bloginfo('stylesheet_url'); ?>' rel='stylesheet' type='text/css'>
