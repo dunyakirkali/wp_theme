@@ -1,11 +1,11 @@
 /*
-Theme Name: Ilana's Dream
+Theme Name: Halfwhite
 Theme URI: http://theme.dunyakirkali.tk
-Description: A Two column theme
-Author: Dunya Kirkali
-Author URI: http://dunyakirkali.tk/
+Description: A halfwhite two column theme.
+Author: Ilana Marcovic & Dunya Kirkali
+Author URI: http://logosaints.com/
 Version: 1.0
-Tags: two, column, sleek
+Tags: two, column, white, half
 .
 Your theme can be your copyrighted work.
 Like WordPress, this work is released under GNU General Public License, version 2 (GPL).
@@ -20,6 +20,7 @@ http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
   .site-title-font {
     font-size: 1.6rem;
     letter-spacing: 5.2px;  
+    margin-top: 78px;    
   }
   
   .site-subtitle-font {
@@ -32,6 +33,7 @@ http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
   .site-title-font {
     font-size: 2.3em;
     letter-spacing: 8px;  
+    margin-top: 74px;
   }
 
   .site-subtitle-font {
@@ -43,7 +45,8 @@ http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 @media only screen and (min-width: 64.063em) {
   .site-title-font {
     font-size: 3em;
-    letter-spacing: 8px;  
+    letter-spacing: 8px;
+    margin-top: 67px;     
   }
 
   .site-subtitle-font {
@@ -72,16 +75,22 @@ http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 .menu-icon {
   padding: 10px;
   font-size: 1em;
+  position:absolute;
+  top:0;
+  left:0;
 }
 
 /* ------ ------- ------- ------- ------- -*/
 
 #site-title {
-  margin-bottom: 0;
+  margin-bottom:0;
+  line-height:1;
 }
 
 .page h2 {
   text-align: center;
+  margin-top:70px;  
+  margin-bottom:60px;  
 }
 
 #placeholder_1 {
@@ -90,6 +99,15 @@ http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 
 #placeholder_2 {
   height: 25vh;
+}
+
+#copyright-div {
+  margin-top:70px;
+  text-align:center;
+}
+
+#copyright {
+  margin-bottom:0.3rem;
 }
 
 #first {
@@ -115,7 +133,7 @@ http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 /* MENU */
 
 #large-menu {
-  margin-top: 5vh;
+  margin-top: 9vh;
 }
 
 .dropdown {
@@ -143,6 +161,12 @@ http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 #mobile-menu {
   height: 35px;
   background-color:#F2F2F2;
+  text-align:center;
+}
+
+#mobile-menu a {
+  display:inline-block;
+  padding-top:10px;
 }
 
 #menu-menu-1 {
@@ -152,8 +176,8 @@ http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 }
 
 .menu-item span { 
-  margin-left: 1px;
-  margin-right: 1px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 #menu-menu-1 li:last-child span  {
@@ -169,6 +193,7 @@ http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 #menu-menu-1 .current-menu-item a {
   border-top-style: solid;
   border-top-width: 2px;
+  padding-top:15px;
 }
 
 #menu-menu-1 a &:active {

@@ -30,14 +30,8 @@
     <div class='row show-for-small'>    
       <div id='mobile-menu' class='columns small-10 medium-10 large-10 small-push-1 medium-push-1 large-push-1'>
         <span class='fa fa-bars menu-icon'></span><a class='dropdown' href="#" data-dropdown="menu-menu"><?php the_title(); ?></a>
-        <?php
-          $defaults = array(
-            'menu' => 'top-menu',
-//        	  'walker' => new themeslug_walker_nav_menu
-          );
-        ?>
         <div data-dropdown-content>
-          <?php wp_nav_menu($defaults); ?>
+          <?php wp_nav_menu('menu=top-menu'); ?>
         </div>
       </div>
     </div>
@@ -47,7 +41,7 @@
     <a name="top"></a>
     <div class='row hide-for-small hide-for-medium' id='large-menu'>    
       <div class='columns small-12 medium-12 large-12'>
-        <?php wp_nav_menu('menu=top-menu&after=<span>.</span>'); ?>
+        <?php wp_nav_menu('menu=top-menu&after=<span>·</span>'); ?>
       </div>
     </div>
     <div class='row show-for-medium'>    
@@ -64,7 +58,7 @@
       </div>
     </div>    
     <div class='row'>    
-      <div class='columns small-10 medium-10 large-10 small-push-1 medium-push-1 large-push-1'>
+      <div class='columns small-10 medium-10 large-8 small-push-1 medium-push-1 large-push-2'>
         <?php while(have_posts()) : the_post(); ?>
           <div class='page'>
             <h2><?php the_title(); ?></h2>
@@ -74,9 +68,9 @@
       </div>
     </div>
     
-    <div class='row'>    
-      <div class='columns small-10 medium-10 large-10 small-push-1 medium-push-1 large-push-1'>
-        <p>© 2014 Mathilde, All Rights Reserved.</p>
+    <div class='row' id='copyright-div'>    
+      <div class='columns small-10 medium-10 large-8 small-push-1 medium-push-1 large-push-2'>
+        <p id='copyright'>© 2014 Mathilde, All Rights Reserved.</p>
         <a href='#top' class='hide-for-small'>Back to top</a>
         <a href='#mobile-top' class='show-for-small'>Back to top</a>
       </div>
