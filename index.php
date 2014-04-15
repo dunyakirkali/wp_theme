@@ -11,12 +11,12 @@
   }
 ?>
     
-<div class='row'>
+<div class='row' id='main-row'>
   <a name="mobile-top"></a>
   
   <div id='first' class='columns small-12 medium-6 large-6' style="background: url('<?php echo $thumbnail; ?>') no-repeat center center;">
     <div class='row' id="placeholder_1"></div>
-    <div class='row'>
+    <div class='row' id="caption_row">
       <div class='columns small-10 medium-10 large-10 small-push-1 medium-push-1 large-push-1' id='caption'>
         <div class='row'>
           <p id='site-title' class='site-title-font'><?php echo get_bloginfo('name'); ?></p>
@@ -36,9 +36,8 @@
       </div>
     </div>
   </div>
-  
   <div class='columns small-12 medium-6 large-6' id='second'>
-    <a name="top"></a>
+    <a name="top"> </a>
     <div class='row hide-for-small hide-for-medium' id='large-menu'>    
       <div class='columns small-12 medium-12 large-12'>
         <?php wp_nav_menu('menu=top-menu&after=<span>·</span>'); ?>
