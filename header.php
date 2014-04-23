@@ -11,10 +11,11 @@
   <link href='http://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
   
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script src="<?php bloginfo('stylesheet_directory'); ?>/js/vendor/modernizr.js"></script>  
-  <script src="<?php bloginfo('stylesheet_directory'); ?>/js/foundation.min.js"></script>  
+  <script src="<?php bloginfo('stylesheet_directory'); ?>/js/vendor/modernizr.js"></script>
+  <script src="<?php bloginfo('stylesheet_directory'); ?>/js/vendor/drop.js"></script>
+  <script src="<?php bloginfo('stylesheet_directory'); ?>/js/foundation.min.js"></script>
   <script src="<?php bloginfo('stylesheet_directory'); ?>/js/foundation/foundation.dropdown.js"></script>
-  <script src="<?php bloginfo('stylesheet_directory'); ?>/js/foundation/foundation.equalizer.js"></script>  
+  <script src="<?php bloginfo('stylesheet_directory'); ?>/js/foundation/foundation.equalizer.js"></script>
   <script src="<?php bloginfo('stylesheet_directory'); ?>/theme.js"></script>
 </head>
 <body>
