@@ -12,8 +12,6 @@
 ?>
     
 <div class='row' id='main-row'>
-  <a name="mobile-top"></a>
-  
   <div id='first' class='columns small-12 medium-6 large-6' style="background: url('<?php echo $thumbnail; ?>') no-repeat center center;">
     <div class='row' id="placeholder_1"></div>
     <div class='row' id="caption_row">
@@ -23,15 +21,6 @@
         </div>
         <div class='row'>
           <p class='site-subtitle-font'><?php echo get_bloginfo('description'); ?></p>
-        </div>
-      </div>
-    </div>
-    <div class='row' id="placeholder_2"></div>    
-    <div class='row show-for-small'>    
-      <div class='columns small-10 medium-10 large-10 small-push-1 medium-push-1 large-push-1 mobile-menu'>
-        <span class='fa fa-bars menu-icon'></span><a class='dropdown' href="#" data-dropdown="menu-menu"><?php the_title(); ?></a>
-        <div data-dropdown-content>
-          <?php wp_nav_menu('menu=top-menu'); ?>
         </div>
       </div>
     </div>
@@ -45,10 +34,10 @@
     </div>
     <div class='row show-for-medium'>    
       <div class='columns medium-6 medium-push-3 mobile-menu-font mobile-menu' id="menu-row">
-        <span class='fa fa-bars menu-icon'></span><a href="#" data-dropdown="menu-menu-2"><?php the_title(); ?></a>
-        <div data-dropdown-content>
-          <?php wp_nav_menu('menu=top-menu'); ?>
+        <div class='dropdown'>
+            <span class='fa fa-bars menu-icon'></span><a href="#"><?php the_title(); ?></a>
         </div>
+        <?php wp_nav_menu('menu=top-menu'); ?>
       </div>
     </div>    
     <div class='row'>    

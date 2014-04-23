@@ -18,6 +18,20 @@ html, body, #main-row {
   height:100%;
 }
 
+.drop-content {
+  overflow: hidden;
+  position: relative;
+}
+
+.drop-content ul li {
+  width: 100%;
+  background: #e0e0e0;
+  line-height: 60px;
+  height: 60px;
+  position: relative;
+  display: block;
+}
+
 
 /* TYPEFACE */
 
@@ -161,8 +175,8 @@ a {
   margin-top: 9%;
 }
 
-.dropdown {
-  text-align:center;
+#menu-row .menu-menu-container {
+  display: none;
 }
 
 #menu-row {
@@ -176,13 +190,6 @@ a {
   text-align:center;
 }
 
-#menu-menu {
-  background-color:#F2F2F2;
-  text-align: center;
-  list-style-type: none;
-  padding: 0;
-}
-
 .mobile-menu {
   height: 35px;
   background-color:#F2F2F2;
@@ -194,7 +201,7 @@ a {
   padding-top:10px;
 }
 
-#menu-menu-1 {
+#menu-menu {
   text-align: center;
   list-style-type: none;
   padding: 0;
@@ -205,31 +212,31 @@ a {
   margin-right: 10px;
 }
 
-#menu-menu-1 li:last-child span  {
+#menu-menu li:last-child span  {
   display:none;
 }
 
-#menu-menu-1 a {  
+#menu-menu a {  
   color: inherit;
   text-decoration: inherit;
   cursor: hand;
 } 
 
-#menu-menu-1 .current-menu-item a {
+#menu-menu .current-menu-item a {
   border-top-style: solid;
   border-top-width: 2px;
   padding-top:15px;
 }
 
-#menu-menu-1 a &:active {
+#menu-menu a &:active {
   outline: none;
 }
 
-#menu-menu-1 a &:focus {
+#menu-menu a &:focus {
   outline: none;
 }
 
-#menu-menu-1 li {  
+#menu-menu li {  
   display: inline;  
   margin: 0;
 }  
