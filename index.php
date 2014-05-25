@@ -80,18 +80,16 @@
 	
     <div class='row show-for-medium'>    
       <div class='columns medium-6 medium-push-3' id='medium-menu'>
-        <span class='fa fa-bars menu-icon'></span><a href="#" data-dropdown="medium-menu-items"><?php the_title(); ?></a>
-        <div data-dropdown-content>
-          <?php 
-						$options = array(
-							'menu'            => 'top-menu',
-							'menu_id'         => 'medium-menu-items'
-						);
-						
-					  wp_nav_menu($options);
-					?>
-        </div>
+        <span class='fa fa-bars menu-icon'></span><a href="#"><?php the_title(); ?></a>
       </div>
+      <?php 
+				$options = array(
+					'menu'            => 'top-menu',
+					'container_id'    => 'medium-menu-items',
+				);
+				
+			  wp_nav_menu($options);
+			?>
     </div>    
 	
     <div class='row'>    

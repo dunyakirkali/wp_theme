@@ -151,6 +151,16 @@ a {
   text-align:center;
 }
 
+.menu-item span { 
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
+#menu-link {
+  text-align:center;
+}
+
 /* small */
 
 .mobile-menu-icon {
@@ -171,8 +181,7 @@ a {
   background-color:#F2F2F2;
   margin-top: 5%;
   margin-bottom: 5%;
-  text-align:center;  
-	margin-top: 9%;
+  text-align:center;
 	height: 35px;
 	line-height: 35px;
 }
@@ -213,18 +222,6 @@ a {
 #large-menu li {  
   display: inline;  
   margin: 0;
-}  
-
-/* garbage */
-
-.menu-item span { 
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-
-#menu-link {
-  text-align:center;
 }
 
 /* Caption */
