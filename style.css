@@ -177,6 +177,10 @@ a {
 	line-height: 35px;
 }
 
+#medium-menu .menu {
+	background-color:#F2F2F2;
+}
+
 /* large */
 #large-menu {
   margin-top: 9%;
