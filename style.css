@@ -140,48 +140,18 @@ a {
 
 /* MENU */
 
-/* medium */
-#medium-menu {
-  background-color:#F2F2F2;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  text-align:center;  
-	margin-top: 9%;
-}
-
-/* large */
-#large-menu {
-  margin-top: 9%;
-}
-
-.dropdown {
-  text-align:center;
-}
-
-/* garbage */
-
-
-#menu-link {
-  text-align:center;
-}
-
-#menu-menu {
-  background-color:#F2F2F2;
+.menu {
   text-align: center;
   list-style-type: none;
   padding: 0;
 }
 
-.mobile-menu {
-  height: 35px;
-  background-color:#F2F2F2;
+/* is this being used? */
+.dropdown {
   text-align:center;
 }
 
-.mobile-menu a {
-  display:inline-block;
-  padding-top:10px;
-}
+/* small */
 
 .mobile-menu-icon {
 	background-color:white;
@@ -196,45 +166,62 @@ a {
 	background-color:#D1D1D1;
 }
 
-#menu-menu-1 {
-  text-align: center;
-  list-style-type: none;
-  padding: 0;
+/* medium */
+#medium-menu {
+  background-color:#F2F2F2;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-align:center;  
+	margin-top: 9%;
+	height: 35px;
+	line-height: 35px;
 }
+
+/* large */
+#large-menu {
+  margin-top: 9%;
+}
+
+#large-menu li:last-child span  {
+  display:none;
+}
+
+#large-menu a {  
+  color: inherit;
+  text-decoration: inherit;
+  cursor: hand;
+} 
+
+#large-menu .current-menu-item a {
+  border-top-style: solid;
+  border-top-width: 2px;
+  padding-top:15px;
+}
+
+#large-menu a &:active {
+  outline: none;
+}
+
+#large-menu a &:focus {
+  outline: none;
+}
+
+#large-menu li {  
+  display: inline;  
+  margin: 0;
+}  
+
+/* garbage */
 
 .menu-item span { 
   margin-left: 10px;
   margin-right: 10px;
 }
 
-#menu-menu-1 li:last-child span  {
-  display:none;
+
+#menu-link {
+  text-align:center;
 }
-
-#menu-menu-1 a {  
-  color: inherit;
-  text-decoration: inherit;
-  cursor: hand;
-} 
-
-#menu-menu-1 .current-menu-item a {
-  border-top-style: solid;
-  border-top-width: 2px;
-  padding-top:15px;
-}
-
-#menu-menu-1 a &:active {
-  outline: none;
-}
-
-#menu-menu-1 a &:focus {
-  outline: none;
-}
-
-#menu-menu-1 li {  
-  display: inline;  
-  margin: 0;
-}  
 
 /* Caption */
 

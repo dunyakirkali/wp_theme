@@ -64,9 +64,17 @@
   
   <div class='columns small-12 medium-6 large-6' id='second'>
 	
-    <div class='row hide-for-small hide-for-medium' id='large-menu'>    
+    <div class='row hide-for-small hide-for-medium'>
       <div class='columns large-12'>
-        <?php wp_nav_menu('menu=top-menu&after=<span>·</span>'); ?>
+        <?php
+			  	$options = array(
+		  			'menu'            => 'top-menu',
+	  				'menu_id'         => 'large-menu',
+						'after'           => '<span>·</span>',
+  				);
+				  
+					wp_nav_menu($options);
+				?>
       </div>
     </div>
 	
