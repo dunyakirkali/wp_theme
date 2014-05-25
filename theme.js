@@ -7,4 +7,16 @@ $( document ).ready(function() {
 		classes: 'medium-3',
 		remove: true
 	});
+	
+	
+	$('#mobile-top').on('click', function(event){
+		$('body').scrollTop('#second');
+		event.preventDefault();
+	});
+	
+	$('#top').on('click', function(event){
+	  $('#second').scrollTop(0);
+		event.preventDefault();
+	});
+	
 });

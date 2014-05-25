@@ -107,8 +107,8 @@
       <div class='columns small-10 medium-10 large-8 small-push-1 medium-push-1 large-push-2'>
         <p id='copyright'>© 2014 Mathilde, All Rights Reserved.</p>
 				
-        <a id='top' href='#top' class='hide-for-small'>Back to top</a>
-        <a id='mobile-top' href='#mobile-top' class='show-for-small'>Back to top</a>
+        <a id='top' href='#' class='hide-for-small'>Back to top</a>
+        <a id='mobile-top' href='#' class='show-for-small'>Back to top</a>
       </div>
     </div>
 	
