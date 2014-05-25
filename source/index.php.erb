@@ -43,7 +43,28 @@
     <div class='row show-for-small'>    
       <div class='columns small-10 medium-10 large-10 small-push-1 medium-push-1 large-push-1'>
 				<% if development? %>
-				
+					<div class='row'>
+					<div class='columns small-3'>
+					<div class='mobile-menu-icon '>
+					<a href='http://theme.dunyakirkali.tk/?page_id=15'><span class='fa fa-phone fa-2x'></span></a>
+					</div>
+					</div>
+					<div class='columns small-3'>
+					<div class='mobile-menu-icon '>
+					<a href='http://theme.dunyakirkali.tk/?page_id=9'><span class='fa fa-scissors fa-2x'></span></a>
+					</div>
+					</div>
+					<div class='columns small-3'>
+					<div class='mobile-menu-icon current'>
+					<a href='http://theme.dunyakirkali.tk/'><span class='fa fa-euro fa-2x'></span></a>
+					</div>
+					</div>
+					<div class='columns small-3'>
+					<div class='mobile-menu-icon '>
+					<a href='http://theme.dunyakirkali.tk/?page_id=7'><span class='fa fa-lightbulb-o fa-2x'></span></a>
+					</div>
+					</div>
+					</div>
 				<% else %>
 					<?php
 						$args = array(
@@ -87,7 +108,11 @@
     <div class='row hide-for-small hide-for-medium'>
       <div class='columns large-12'>
         <% if development? %>
-				
+					<div class="menu-menu-container"><ul id="large-menu" class="menu"><li id="menu-item-13" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-5 current_page_item menu-item-13"><a href="http://theme.dunyakirkali.tk/">L&#8217;Atelier</a><span>&#183;</span></li>
+					<li id="menu-item-14" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14"><a href="http://theme.dunyakirkali.tk/?page_id=7">Philosophie</a><span>&#183;</span></li>
+					<li id="menu-item-12" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12"><a href="http://theme.dunyakirkali.tk/?page_id=9">Couture</a><span>&#183;</span></li>
+					<li id="menu-item-19" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19"><a href="http://theme.dunyakirkali.tk/?page_id=15">Contact</a><span>&#183;</span></li>
+					</ul></div> 
 				<% else %>
 	        <?php
 				  	$options = array(
@@ -111,7 +136,11 @@
         <% end %>
       </div>
 			<%if development? %>
-			  
+				<div id="medium-menu-items" class="menu-menu-container"><ul id="menu-menu" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-5 current_page_item menu-item-13"><a href="http://theme.dunyakirkali.tk/">L&#8217;Atelier</a></li>
+				<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14"><a href="http://theme.dunyakirkali.tk/?page_id=7">Philosophie</a></li>
+				<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12"><a href="http://theme.dunyakirkali.tk/?page_id=9">Couture</a></li>
+				<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19"><a href="http://theme.dunyakirkali.tk/?page_id=15">Contact</a></li>
+				</ul></div>
 			<% else %>
 	      <?php 
 	 				$options = array(
