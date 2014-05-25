@@ -12,7 +12,6 @@
 ?>
     
 <div class='row' id='main-row'>
-  <a name="mobile-top"></a>
   
   <div id='first' class='columns small-12 medium-6 large-6' style="background: url('<?php echo $thumbnail; ?>') no-repeat center center;">
     <div class='row' id="placeholder_1"></div>
@@ -36,13 +35,15 @@
       </div>
     </div>
   </div>
+  
   <div class='columns small-12 medium-6 large-6' id='second'>
-    <a name="top"> </a>
+	
     <div class='row hide-for-small hide-for-medium' id='large-menu'>    
       <div class='columns small-12 medium-12 large-12'>
         <?php wp_nav_menu('menu=top-menu&after=<span>·</span>'); ?>
       </div>
     </div>
+	
     <div class='row show-for-medium'>    
       <div class='columns medium-6 medium-push-3 mobile-menu-font mobile-menu' id="menu-row">
         <span class='fa fa-bars menu-icon'></span><a href="#" data-dropdown="menu-menu-2"><?php the_title(); ?></a>
@@ -51,6 +52,7 @@
         </div>
       </div>
     </div>    
+	
     <div class='row'>    
       <div class='columns small-10 medium-10 large-8 small-push-1 medium-push-1 large-push-2'>
         <?php while(have_posts()) : the_post(); ?>
@@ -69,10 +71,8 @@
         <a id='mobile-top' href='#mobile-top' class='show-for-small'>Back to top</a>
       </div>
     </div>
+	
   </div>  
 </div>
-
-
-
 
 <?php get_footer(); ?>
