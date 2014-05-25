@@ -110,7 +110,7 @@
     
     <div class='row' id='copyright-div'>    
       <div class='columns small-10 medium-10 large-8 small-push-1 medium-push-1 large-push-2'>
-        <p id='copyright'>© 2014 Mathilde, All Rights Reserved.</p>
+        <p id='copyright'>&#169; 2014 Mathilde, All Rights Reserved.</p>
 				
         <a id='top' href='#' class='hide-for-small'>Back to top</a>
         <a id='mobile-top' href='#' class='show-for-small'>Back to top</a>
