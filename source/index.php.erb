@@ -1,20 +1,8 @@
-<% if build? %>
-	<?php 
-	// This doesn't belong here
-	  if ( has_post_thumbnail() ) {
-	    $post_image_id = get_post_thumbnail_id($post_to_use->ID);
-	    if ($post_image_id) {
-				$thumbnail = wp_get_attachment_image_src( $post_image_id, 'post-thumbnail', false);
-				if ($thumbnail) (string)$thumbnail = $thumbnail[0];
-			}
-	  }
-	?>
-<% end %>
 <div class='row' id='main-row'>
 	<% if development? %>
-	  <div id='first' class='columns small-12 medium-6 large-6' style="background: url('screenshot.png') no-repeat center center;">
+	  <div id='first' class='columns small-12 medium-6 large-6' style="background: url('http://placekitten.com/g/600/800') no-repeat center center;">
   <% else %>
-	  <div id='first' class='columns small-12 medium-6 large-6' style="background: url('<?php echo $thumbnail; ?>') no-repeat center center;">
+	  <div id='first' class='columns small-12 medium-6 large-6' style="background: url('<?php echo get_background_image(); ?>') no-repeat center center;">
   <% end %>
 
     <div class='row' id="placeholder_1"></div>
@@ -43,28 +31,7 @@
     <div class='row show-for-small'>    
       <div class='columns small-10 medium-10 large-10 small-push-1 medium-push-1 large-push-1'>
 				<% if development? %>
-					<div class='row'>
-					<div class='columns small-3'>
-					<div class='mobile-menu-icon '>
-					<a href='http://theme.dunyakirkali.tk/?page_id=15'><span class='fa fa-phone fa-2x'></span></a>
-					</div>
-					</div>
-					<div class='columns small-3'>
-					<div class='mobile-menu-icon '>
-					<a href='http://theme.dunyakirkali.tk/?page_id=9'><span class='fa fa-scissors fa-2x'></span></a>
-					</div>
-					</div>
-					<div class='columns small-3'>
-					<div class='mobile-menu-icon current'>
-					<a href='http://theme.dunyakirkali.tk/'><span class='fa fa-euro fa-2x'></span></a>
-					</div>
-					</div>
-					<div class='columns small-3'>
-					<div class='mobile-menu-icon '>
-					<a href='http://theme.dunyakirkali.tk/?page_id=7'><span class='fa fa-lightbulb-o fa-2x'></span></a>
-					</div>
-					</div>
-					</div>
+				  <%= partial "small_menu" %>
 				<% else %>
 					<?php
 						$args = array(
@@ -108,11 +75,7 @@
     <div class='row hide-for-small hide-for-medium'>
       <div class='columns large-12'>
         <% if development? %>
-					<div class="menu-menu-container"><ul id="large-menu" class="menu"><li id="menu-item-13" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-5 current_page_item menu-item-13"><a href="http://theme.dunyakirkali.tk/">L&#8217;Atelier</a><span>&#183;</span></li>
-					<li id="menu-item-14" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14"><a href="http://theme.dunyakirkali.tk/?page_id=7">Philosophie</a><span>&#183;</span></li>
-					<li id="menu-item-12" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12"><a href="http://theme.dunyakirkali.tk/?page_id=9">Couture</a><span>&#183;</span></li>
-					<li id="menu-item-19" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19"><a href="http://theme.dunyakirkali.tk/?page_id=15">Contact</a><span>&#183;</span></li>
-					</ul></div> 
+				  <%= partial "large_menu" %>
 				<% else %>
 	        <?php
 				  	$options = array(
@@ -136,11 +99,7 @@
         <% end %>
       </div>
 			<%if development? %>
-				<div id="medium-menu-items" class="menu-menu-container"><ul id="menu-menu" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-5 current_page_item menu-item-13"><a href="http://theme.dunyakirkali.tk/">L&#8217;Atelier</a></li>
-				<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14"><a href="http://theme.dunyakirkali.tk/?page_id=7">Philosophie</a></li>
-				<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12"><a href="http://theme.dunyakirkali.tk/?page_id=9">Couture</a></li>
-				<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19"><a href="http://theme.dunyakirkali.tk/?page_id=15">Contact</a></li>
-				</ul></div>
+  			<%= partial "medium_menu" %>
 			<% else %>
 	      <?php 
 	 				$options = array(
@@ -157,14 +116,7 @@
       <div class='columns small-10 medium-10 large-8 small-push-1 medium-push-1 large-push-2'>
 				<% if development? %>
           <div class='page'>
-            <h2>Test page</h2>
-						<div id="lipsum">
-						<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vel turpis porta, ultrices est vitae, mollis orci. Integer eget orci condimentum purus facilisis malesuada. Praesent ornare non justo nec pellentesque. Ut eget nisi sit amet lorem aliquam vehicula vitae non nulla. Donec in viverra ligula. Fusce aliquet vulputate eros, nec cursus purus pulvinar nec. Curabitur congue felis eu semper euismod. Quisque consequat turpis nec dui auctor dignissim. Morbi in orci et justo lobortis porta. Praesent viverra nisl quis massa congue tristique quis at velit.
-						</p>
-						<p>
-						Nulla facilisi. Aenean volutpat eros at eros blandit, a volutpat nunc suscipit. In gravida tincidunt convallis. Donec placerat quis nibh vel vehicula. Aenean auctor odio convallis massa consectetur, at aliquam neque egestas. Nulla vehicula semper justo ac euismod. Nunc id enim quis lacus rutrum mattis.
-						</p></div>
+						<%= partial "page" %>
           </div>
 				<% else %>
 	        <?php while(have_posts()) : the_post(); ?>
