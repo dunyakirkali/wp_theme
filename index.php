@@ -85,7 +85,7 @@
       <?php 
 				$options = array(
 					'menu'            => 'top-menu',
-					'container_id'    => 'medium-menu-items',
+					'container_id'    => 'medium-menu-items'
 				);
 				
 			  wp_nav_menu($options);

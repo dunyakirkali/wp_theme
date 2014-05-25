@@ -144,6 +144,7 @@ a {
   text-align: center;
   list-style-type: none;
   padding: 0;
+	margin: 0px;
 }
 
 /* is this being used? */
@@ -188,6 +189,18 @@ a {
 
 #medium-menu .menu {
 	background-color:#F2F2F2;
+}
+
+#medium-menu-items {
+	padding-right: 8px;
+}
+
+#medium-menu-items .menu-item {
+	background-color:#F2F2F2;
+	height: 35px;
+	line-height: 35px;
+	width: 100%;
+	border-top: 1px solid black;
 }
 
 /* large */
