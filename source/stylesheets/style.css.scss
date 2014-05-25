@@ -23,7 +23,8 @@ html, body, #main-row {
 
 /* Colors */
 
-// TODO
+$grey: #F2F2F2;
+$whitey: #999999;
 
 /* TYPEFACE */
 
@@ -180,26 +181,26 @@ a {
 }
 
 .mobile-menu-icon.current {
-	background-color:#D1D1D1;
+	background-color:$grey;
 }
 
 /* medium */
 #medium-menu {
-  background-color:#F2F2F2;
+  background-color:$grey;
   margin-top: 5%;
   margin-bottom: 5%;
   text-align:center;
 	height: 35px;
 	line-height: 35px;
 	.menu {
-		background-color:#F2F2F2;
+		background-color:$grey;
 	}
 }
 
 #medium-menu-items {
 	padding-right: 8px;
 	.menu-item {
-		background-color:#F2F2F2;
+		background-color:$grey;
 		height: 35px;
 		line-height: 35px;
 		width: 100%;
@@ -244,14 +245,14 @@ a {
 /* FORM */
 
 input {   
-  background: #F2F2F2 !important;
-  color: #999999 !important;
+  background: $grey !important;
+  color: $whitey !important;
   border: 0 !important;  
 }
 
 textarea {
-  color: #999999 !important;
-  background: #F2F2F2 !important;
+  color: $whitey !important;
+  background: $grey !important;
   border: 0 !important;  
 }
 
