@@ -32,7 +32,12 @@
     <div class='row show-for-small'>    
       <div class='columns small-10 medium-10 large-10 small-push-1 medium-push-1 large-push-1'>
 		<?php
-      $pages = get_pages();
+			$args = array(
+				'sort_order' => 'ASC',
+				'sort_column' => 'order',
+				'number' => '4'
+			); 
+      $pages = get_pages($args);
 		  $row_count = (count($pages) < 5) ? 1 : 2;
  		  $current_page_id = get_the_ID();
 			
