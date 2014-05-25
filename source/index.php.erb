@@ -1,0 +1,161 @@
+<% if build? %>
+	<?php 
+	// This doesn't belong here
+	  if ( has_post_thumbnail() ) {
+	    $post_image_id = get_post_thumbnail_id($post_to_use->ID);
+	    if ($post_image_id) {
+				$thumbnail = wp_get_attachment_image_src( $post_image_id, 'post-thumbnail', false);
+				if ($thumbnail) (string)$thumbnail = $thumbnail[0];
+			}
+	  }
+	?>
+<% end %>
+<div class='row' id='main-row'>
+	<% if development? %>
+	  <div id='first' class='columns small-12 medium-6 large-6' style="background: url('screenshot.png') no-repeat center center;">
+  <% else %>
+	  <div id='first' class='columns small-12 medium-6 large-6' style="background: url('<?php echo $thumbnail; ?>') no-repeat center center;">
+  <% end %>
+
+    <div class='row' id="placeholder_1"></div>
+
+    <div class='row' id="caption_row">
+      <div class='columns small-10 medium-10 large-10 small-push-1 medium-push-1 large-push-1' id='caption'>
+        <div class='row'>
+					<% if development? %>
+					  <p id='site-title' class='site-title-font'>Test</p>
+          <% else %>
+					  <p id='site-title' class='site-title-font'><?php echo get_bloginfo('name'); ?></p>
+          <% end %>
+        </div>
+        <div class='row'>
+					<% if development? %>
+					  <p class='site-subtitle-font'>Best site ever</p>
+          <% else %>
+					  <p class='site-subtitle-font'><?php echo get_bloginfo('description'); ?></p>
+          <% end %>
+        </div>
+      </div>
+    </div>
+
+    <div class='row' id="placeholder_2"></div>    
+
+    <div class='row show-for-small'>    
+      <div class='columns small-10 medium-10 large-10 small-push-1 medium-push-1 large-push-1'>
+				<% if development? %>
+				
+				<% else %>
+					<?php
+						$args = array(
+							'sort_order' => 'ASC',
+							'sort_column' => 'order',
+							'number' => '4'
+						); 
+			      $pages = get_pages($args);
+					  $row_count = (count($pages) < 5) ? 1 : 2;
+			 		  $current_page_id = get_the_ID();
+			
+					  for($i = 0; $i < $row_count; $i++) {
+							$slice_from = ($row_count == 1) ? 0 : (($i1 == 0) ? 0 : $i1);
+							$slice_to = ($row_count == 1) ? count($pages) : 0;
+							$this_rows_pages = array_slice($pages, $slice_from, $slice_to);
+				
+							echo "<div class='row'>\n";
+				
+						  foreach($this_rows_pages as $page) {
+								$icon_size = 12 / count($pages);
+								$page_link = get_page_link($page->ID);
+								$link_class = ($current_page_id == $page->ID) ? 'current' : '';
+								$icon = get_post_meta($page->ID, "Page Icon", true);
+								$icon = ($icon == '') ? 'fa-bars' : $icon; 
+						    echo "<div class='columns small-{$icon_size}'>\n";
+								echo "<div class='mobile-menu-icon {$link_class}'>\n";
+						    echo "<a href='{$page_link}'><span class='fa {$icon} fa-2x'></span></a>\n";
+								echo "</div>\n";
+						    echo "</div>\n";
+						  }
+							echo "</div>\n";
+					  }
+					?>
+				<% end %>
+      </div>
+    </div>
+  </div>
+
+  <div class='columns small-12 medium-6 large-6' id='second'>
+
+    <div class='row hide-for-small hide-for-medium'>
+      <div class='columns large-12'>
+        <% if development? %>
+				
+				<% else %>
+	        <?php
+				  	$options = array(
+			  			'menu'            => 'top-menu',
+		  				'menu_id'         => 'large-menu',
+							'after'           => '<span>·</span>',
+	  				);
+				  
+						wp_nav_menu($options);
+					?>
+				<% end %>
+      </div>
+    </div>
+
+    <div class='row show-for-medium'>    
+      <div class='columns medium-6 medium-push-3' id='medium-menu'>
+				<% if development? %>
+				  <span class='fa fa-bars menu-icon'></span><a href="#">Test Page</a>
+        <% else %>
+				  <span class='fa fa-bars menu-icon'></span><a href="#"><?php the_title(); ?></a>
+        <% end %>
+      </div>
+			<%if development? %>
+			  
+			<% else %>
+	      <?php 
+	 				$options = array(
+	 					'menu'            => 'top-menu',
+	 					'container_id'    => 'medium-menu-items'
+	 				);
+				
+	 			  wp_nav_menu($options);
+	 			?>
+			<% end %>
+    </div>    
+
+    <div class='row'>    
+      <div class='columns small-10 medium-10 large-8 small-push-1 medium-push-1 large-push-2'>
+				<% if development? %>
+          <div class='page'>
+            <h2>Test page</h2>
+						<div id="lipsum">
+						<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vel turpis porta, ultrices est vitae, mollis orci. Integer eget orci condimentum purus facilisis malesuada. Praesent ornare non justo nec pellentesque. Ut eget nisi sit amet lorem aliquam vehicula vitae non nulla. Donec in viverra ligula. Fusce aliquet vulputate eros, nec cursus purus pulvinar nec. Curabitur congue felis eu semper euismod. Quisque consequat turpis nec dui auctor dignissim. Morbi in orci et justo lobortis porta. Praesent viverra nisl quis massa congue tristique quis at velit.
+						</p>
+						<p>
+						Nulla facilisi. Aenean volutpat eros at eros blandit, a volutpat nunc suscipit. In gravida tincidunt convallis. Donec placerat quis nibh vel vehicula. Aenean auctor odio convallis massa consectetur, at aliquam neque egestas. Nulla vehicula semper justo ac euismod. Nunc id enim quis lacus rutrum mattis.
+						</p></div>
+          </div>
+				<% else %>
+	        <?php while(have_posts()) : the_post(); ?>
+	          <div class='page'>
+	            <h2><?php the_title(); ?></h2>
+	            <?php the_content(); ?>
+	          </div>
+	        <?php endwhile; ?>
+				<% end %>
+      </div>
+    </div>
+
+    <div class='row' id='copyright-div'>    
+      <div class='columns small-10 medium-10 large-8 small-push-1 medium-push-1 large-push-2'>
+				<p id='copyright'>&#169; 2014 Mathilde, All Rights Reserved.</p>
+		
+        <a id='top' href='#' class='hide-for-small'>Back to top</a>
+        <a id='mobile-top' href='#' class='show-for-small'>Back to top</a>
+      </div>
+    </div>
+
+  </div>  
+</div>
