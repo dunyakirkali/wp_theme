@@ -1,7 +1,7 @@
 # Development
 
-- bundle
-- bower
+- ``` bundle ```
+- ``` bower install ```
 
 # Features & Technologies
 
@@ -66,10 +66,3 @@ The left image can is fetched from the current page's featured image.
 ## Define icons for pages on mobile-menu
 
 U have o add a custom Field named: 'Page Icon' an as value it expects a font-awesome icon name. If no icon is specified then a **default icon** (which?) will be used. 
-
----
-
-#Upcomming
-
-- More than 4 pages (upto 7 actually ;))
-- Dot system IF no page icon specified
