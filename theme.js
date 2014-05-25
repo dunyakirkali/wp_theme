@@ -10,7 +10,8 @@ $( document ).ready(function() {
 	
 	
 	$('#mobile-top').on('click', function(event){
-		$('body').scrollTop('#second');
+		window.scroll(0, 1);
+		$('body').scrollTop(0);
 		event.preventDefault();
 	});
 	
