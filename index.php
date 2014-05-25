@@ -47,9 +47,10 @@
 					$icon_size = 12 / count($pages);
 					$page_link = get_page_link($page->ID);
 					$link_class = ($current_page_id == $page->ID) ? 'current' : '';
+					$icon = get_post_meta($page->ID, "Page Icon", true);
 			    echo "<div class='columns small-{$icon_size}'>\n";
 					echo "<div class='mobile-menu-icon {$link_class}'>\n";
-			    echo "<a href='{$page_link}'><span class='fa fa-bars fa-2x'></span></a>\n";
+			    echo "<a href='{$page_link}'><span class='fa {$icon} fa-2x'></span></a>\n";
 					echo "</div>\n";
 			    echo "</div>\n";
 			  }
