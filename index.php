@@ -30,11 +30,32 @@
     <div class='row' id="placeholder_2"></div>    
 	
     <div class='row show-for-small'>    
-      <div class='columns small-10 medium-10 large-10 small-push-1 medium-push-1 large-push-1 mobile-menu'>
-        <span class='fa fa-bars menu-icon'></span><a class='dropdown' href="#" data-dropdown="menu-menu"><?php the_title(); ?></a>
-        <div data-dropdown-content>
-          <?php wp_nav_menu('menu=top-menu'); ?>
-        </div>
+      <div class='columns small-10 medium-10 large-10 small-push-1 medium-push-1 large-push-1'>
+		<?php
+      $pages = get_pages();
+		  $row_count = (count($pages) < 5) ? 1 : 2;
+ 		  $current_page_id = get_the_ID();
+			
+		  for($i = 0; $i < $row_count; $i++) {
+				$slice_from = ($row_count == 1) ? 0 : (($i1 == 0) ? 0 : $i1);
+				$slice_to = ($row_count == 1) ? count($pages) : 0;
+				$this_rows_pages = array_slice($pages, $slice_from, $slice_to);
+				
+				echo "<div class='row'>\n";
+				
+			  foreach($this_rows_pages as $page) {
+					$icon_size = 12 / count($pages);
+					$page_link = get_page_link($page->ID);
+					$link_class = ($current_page_id == $page->ID) ? 'current' : '';
+			    echo "<div class='columns small-{$icon_size}'>\n";
+					echo "<div class='mobile-menu-icon {$link_class}'>\n";
+			    echo "<a href='{$page_link}'><span class='fa fa-bars fa-2x'></span></a>\n";
+					echo "</div>\n";
+			    echo "</div>\n";
+			  }
+				echo "</div>\n";
+		  }
+		?>
       </div>
     </div>
   </div>

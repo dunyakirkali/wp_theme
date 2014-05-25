@@ -76,23 +76,6 @@ a {
   }
 }
 
-
-.page-title-font {
-  
-}
-
-.mobile-menu-font {
-  
-}
-
-.navigation-font {
-  
-}
-
-.page-content-font {
-  
-}
-
 #mobile-top, #top {
   margin-bottom: 20px;
 }
@@ -119,11 +102,11 @@ a {
 }
 
 #placeholder_1 {
-  height: 25%;
+  height: 20%;
 }
 
 #placeholder_2 {
-  height: 25%;
+  height: 20%;
 }
 
 #copyright-div {
@@ -192,6 +175,19 @@ a {
 .mobile-menu a {
   display:inline-block;
   padding-top:10px;
+}
+
+.mobile-menu-icon {
+	background-color:white;
+	margin: 0 auto;
+	padding-bottom: 30%;
+	padding-top: 30%;
+	width: 90%;
+	text-align: center;
+}
+
+.mobile-menu-icon.current {
+	background-color:#D5D5D5;
 }
 
 #menu-menu-1 {
