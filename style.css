@@ -140,6 +140,16 @@ a {
 
 /* MENU */
 
+/* medium */
+#medium-menu {
+  background-color:#F2F2F2;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-align:center;  
+	margin-top: 9%;
+}
+
+/* large */
 #large-menu {
   margin-top: 9%;
 }
@@ -148,12 +158,8 @@ a {
   text-align:center;
 }
 
-#menu-row {
-  background-color:#F2F2F2;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  text-align:center;  
-}
+/* garbage */
+
 
 #menu-link {
   text-align:center;

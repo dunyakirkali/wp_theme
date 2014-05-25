@@ -1,4 +1,3 @@
-<?php get_header(); ?>
 <?php 
 // This doesn't belong here
   if ( has_post_thumbnail() ) {
@@ -9,9 +8,10 @@
 		}
   }
 ?>
-    
+
+<?php get_header(); ?>    
 <div class='row' id='main-row'>
-  
+	
   <div id='first' class='columns small-12 medium-6 large-6' style="background: url('<?php echo $thumbnail; ?>') no-repeat center center;">
 	  
     <div class='row' id="placeholder_1"></div>
@@ -48,6 +48,7 @@
 					$page_link = get_page_link($page->ID);
 					$link_class = ($current_page_id == $page->ID) ? 'current' : '';
 					$icon = get_post_meta($page->ID, "Page Icon", true);
+					$icon = ($icon == '') ? 'fa-bars' : $icon; 
 			    echo "<div class='columns small-{$icon_size}'>\n";
 					echo "<div class='mobile-menu-icon {$link_class}'>\n";
 			    echo "<a href='{$page_link}'><span class='fa {$icon} fa-2x'></span></a>\n";
@@ -64,16 +65,23 @@
   <div class='columns small-12 medium-6 large-6' id='second'>
 	
     <div class='row hide-for-small hide-for-medium' id='large-menu'>    
-      <div class='columns small-12 medium-12 large-12'>
+      <div class='columns large-12'>
         <?php wp_nav_menu('menu=top-menu&after=<span>·</span>'); ?>
       </div>
     </div>
 	
     <div class='row show-for-medium'>    
-      <div class='columns medium-6 medium-push-3 mobile-menu-font mobile-menu' id="menu-row">
-        <span class='fa fa-bars menu-icon'></span><a href="#" data-dropdown="menu-menu-2"><?php the_title(); ?></a>
+      <div class='columns medium-6 medium-push-3' id='medium-menu'>
+        <span class='fa fa-bars menu-icon'></span><a href="#" data-dropdown="medium-menu-items"><?php the_title(); ?></a>
         <div data-dropdown-content>
-          <?php wp_nav_menu('menu=top-menu'); ?>
+          <?php 
+						$options = array(
+							'menu'            => 'top-menu',
+							'menu_id'         => 'medium-menu-items'
+						);
+						
+					  wp_nav_menu($options);
+					?>
         </div>
       </div>
     </div>    
@@ -92,6 +100,7 @@
     <div class='row' id='copyright-div'>    
       <div class='columns small-10 medium-10 large-8 small-push-1 medium-push-1 large-push-2'>
         <p id='copyright'>© 2014 Mathilde, All Rights Reserved.</p>
+				
         <a id='top' href='#top' class='hide-for-small'>Back to top</a>
         <a id='mobile-top' href='#mobile-top' class='show-for-small'>Back to top</a>
       </div>
