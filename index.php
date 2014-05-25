@@ -13,7 +13,9 @@
 <div class='row' id='main-row'>
   
   <div id='first' class='columns small-12 medium-6 large-6' style="background: url('<?php echo $thumbnail; ?>') no-repeat center center;">
+	  
     <div class='row' id="placeholder_1"></div>
+	
     <div class='row' id="caption_row">
       <div class='columns small-10 medium-10 large-10 small-push-1 medium-push-1 large-push-1' id='caption'>
         <div class='row'>
@@ -24,7 +26,9 @@
         </div>
       </div>
     </div>
+	
     <div class='row' id="placeholder_2"></div>    
+	
     <div class='row show-for-small'>    
       <div class='columns small-10 medium-10 large-10 small-push-1 medium-push-1 large-push-1 mobile-menu'>
         <span class='fa fa-bars menu-icon'></span><a class='dropdown' href="#" data-dropdown="menu-menu"><?php the_title(); ?></a>
