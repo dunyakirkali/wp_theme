@@ -33,38 +33,7 @@
 				<% if development? %>
 				  <%= partial "small_menu" %>
 				<% else %>
-					<?php
-						$args = array(
-							'sort_order' => 'ASC',
-							'sort_column' => 'order',
-							'number' => '4'
-						); 
-			      $pages = get_pages($args);
-					  $row_count = (count($pages) < 5) ? 1 : 2;
-			 		  $current_page_id = get_the_ID();
-			
-					  for($i = 0; $i < $row_count; $i++) {
-							$slice_from = ($row_count == 1) ? 0 : (($i1 == 0) ? 0 : $i1);
-							$slice_to = ($row_count == 1) ? count($pages) : 0;
-							$this_rows_pages = array_slice($pages, $slice_from, $slice_to);
-				
-							echo "<div class='row'>\n";
-				
-						  foreach($this_rows_pages as $page) {
-								$icon_size = 12 / count($pages);
-								$page_link = get_page_link($page->ID);
-								$link_class = ($current_page_id == $page->ID) ? 'current' : '';
-								$icon = get_post_meta($page->ID, "Page Icon", true);
-								$icon = ($icon == '') ? 'fa-bars' : $icon; 
-						    echo "<div class='columns small-{$icon_size}'>\n";
-								echo "<div class='mobile-menu-icon {$link_class}'>\n";
-						    echo "<a href='{$page_link}'><span class='fa {$icon} fa-2x'></span></a>\n";
-								echo "</div>\n";
-						    echo "</div>\n";
-						  }
-							echo "</div>\n";
-					  }
-					?>
+					<?php echo small_menu(); ?>
 				<% end %>
       </div>
     </div>
