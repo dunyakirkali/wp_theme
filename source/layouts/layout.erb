@@ -48,6 +48,8 @@
 			
 			<p id='wp-tags'><?php the_tags(); ?></p>
 			<p id='wp-link-pages'><?php wp_link_pages( $args ); ?></p>
+			<p id='wp-comments'><?php comments_template(); ?></p>
+			<p id='wp-pagelinks'><?php paginate_links(); ?></p>
 		<% end %>
 		
   </body>
