@@ -1,5 +1,11 @@
-<?php 
-  add_theme_support( 'automatic-feed-links' );
+<?php
+
+  remove_theme_support('post-thumbnails');
+	remove_theme_support('post-formats');
+	remove_theme_support('custom-background');
+	remove_theme_support('custom-header');
+	
+  add_theme_support('automatic-feed-links');
 	
 	function hw_get_background_featured_image()
 	{
