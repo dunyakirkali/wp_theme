@@ -17,6 +17,10 @@
 		  <link href='<?php bloginfo('stylesheet_url'); ?>' rel='stylesheet' type='text/css'>
 		  <script src="<?php bloginfo('stylesheet_directory'); ?>/javascripts/modernizr.js"></script>
 		<% end %>
+		
+		<% if build? %>
+			<?php wp_head(); ?> 
+		<% end %>
   </head>
   
   <body class="<%= page_classes %>">
