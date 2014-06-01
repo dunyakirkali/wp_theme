@@ -23,7 +23,11 @@
 		<% end %>
   </head>
   
-  <body class="<%= page_classes %>">
+	<% if build? %>
+		<body <?php body_class(); ?>>
+	<% else %>
+		<body>
+	<% end %>
     <%= yield %>
 
 		<% if development? %>
