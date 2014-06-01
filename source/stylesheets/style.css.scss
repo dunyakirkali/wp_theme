@@ -199,6 +199,9 @@ a {
 
 #medium-menu-items {
 	padding-right: 8px;
+  .current-menu-item {
+    display: none;
+  }
 	.menu-item {
 		background-color:$grey;
 		height: 35px;
