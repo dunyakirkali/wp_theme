@@ -1,4 +1,6 @@
 <?php 
+  add_theme_support( 'automatic-feed-links' );
+	
 	function hw_get_background_featured_image()
 	{
 		  if ( has_post_thumbnail() ) {
