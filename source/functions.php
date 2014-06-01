@@ -15,7 +15,7 @@
   	$options = array(
 			'menu'            => 'top-menu',
 			'menu_id'         => 'large-menu',
-			'after'           => '<span>·</span>',
+			'after'           => '<span>&#183;</span>',
 		);
     wp_nav_menu($options);
     return true;
