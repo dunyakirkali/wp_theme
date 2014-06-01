@@ -178,8 +178,12 @@ a {
 	padding-top: 30%;
 	width: 90%;
 	text-align: center;
-  a {
-    border-bottom: 3px solid black;
+  
+  &.current {
+    a {
+      border-bottom: 3px solid black;
+      padding-bottom: 10px;
+    }
   }
 }
 
