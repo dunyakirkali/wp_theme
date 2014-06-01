@@ -2,7 +2,7 @@
 	<% if development? %>
 	  <div id='first' class='columns small-12 medium-6 large-6' style="background: url('http://placekitten.com/g/600/800') no-repeat center center;">
   <% else %>
-	  <div id='first' class='columns small-12 medium-6 large-6' style="background: url('<?php echo get_background_featured_image(); ?>') no-repeat center center;">
+	  <div id='first' class='columns small-12 medium-6 large-6' style="background: url('<?php echo wp_get_background_featured_image(); ?>') no-repeat center center;">
   <% end %>
 
     <div class='row' id="placeholder_1"></div>
