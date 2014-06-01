@@ -7,16 +7,16 @@
 	
   add_theme_support('automatic-feed-links');
 	
-	function hw_get_background_featured_image()
-	{
-		  if ( has_post_thumbnail() ) {
-		    $post_image_id = the_post_thumbnail();
-		    if ($post_image_id) {
-					$thumbnail = wp_get_attachment_image_src( $post_image_id, 'post-thumbnail', false);
-					if ($thumbnail) (string)$thumbnail = $thumbnail[0];
-				}
-		  }
-	    return $thumbnail;
+	function hw_get_background_featured_image() {
+		$thumbnail = '';
+	  if ( has_post_thumbnail() ) {
+	    $post_image_id = the_post_thumbnail();
+	    if ($post_image_id) {
+				$thumbnail = wp_get_attachment_image_src( $post_image_id, 'post-thumbnail', false);
+				if ($thumbnail) (string)$thumbnail = $thumbnail[0];
+			}
+	  }
+    return $thumbnail;
 	}
 	
 	function hw_large_menu() {
