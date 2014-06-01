@@ -14,6 +14,18 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 @import "foundation.scss";
 @import "wordpress";
 
+// Stupid wordpress admin bar FIXME
+// http://foundation.zurb.com/forum/posts/1744-the-wordpress-admin-bar-getting-it-to-play-nice-with-foundation-5
+@media screen and (max-width: 600px) {
+    #wpadminbar {
+		position: fixed !important;
+	}
+}
+
+html {
+	overflow-y:hidden;
+}
+
 html, body, #main-row {
   height:100%;
 }
