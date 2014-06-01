@@ -1,5 +1,9 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<% if build? %>
+  <html class="no-js" <?php language_attributes(); ?>>
+<% else %>
+  <html class="no-js" lang="en">
+<% end %>
   <head>
 		<% if build? %>
 		  <title><?php echo get_bloginfo('name'); ?></title>
