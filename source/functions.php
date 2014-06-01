@@ -18,7 +18,9 @@
 			'container_id'    => 'medium-menu-items'
 		);
     
-    return wp_nav_menu($options);
+    wp_nav_menu($options);
+		
+		return true;
   }
     	
 	function hw_small_menu() {
@@ -52,6 +54,8 @@
 		  }
 			$ret .= "</div>\n";
 		}
-		return echo $ret;
+		
+		echo $ret;
+		return true;
 	}
 ?>
