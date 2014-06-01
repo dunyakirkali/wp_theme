@@ -70,14 +70,7 @@
 			<%if development? %>
   			<%= partial "medium_menu" %>
 			<% else %>
-	      <?php 
-	 				$options = array(
-	 					'menu'            => 'top-menu',
-	 					'container_id'    => 'medium-menu-items'
-	 				);
-				
-	 			  wp_nav_menu($options);
-	 			?>
+        <?php medium_menu(); ?>
 			<% end %>
     </div>    
 
