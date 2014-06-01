@@ -1,10 +1,12 @@
 <!doctype html>
+
 <% if build? %>
   <html class="no-js" <?php language_attributes(); ?>>
 <% else %>
   <html class="no-js" lang="en">
 <% end %>
-  <head>
+  
+	<head>
 		<% if build? %>
 		  <title><?php echo get_bloginfo('name'); ?></title>
 		<% end %>
@@ -32,6 +34,7 @@
 	<% else %>
 		<body>
 	<% end %>
+	
     <%= yield %>
 
 		<% if development? %>
