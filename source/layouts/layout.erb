@@ -15,7 +15,7 @@
 			<%= javascript_include_tag "modernizr" %>
 		<% else %>
 		  <link href='<?php bloginfo('stylesheet_url'); ?>' rel='stylesheet' type='text/css'>
-		  <script src="<?php bloginfo('stylesheet_directory'); ?>/javascripts/modernizr.js"></script>
+		  <script src="<?php get_stylesheet_directory_uri(); ?>/javascripts/modernizr.js"></script>
 		<% end %>
 		
 		<% if build? %>
@@ -33,7 +33,7 @@
 		<% if development? %>
 			<%= javascript_include_tag  "all" %>
 		<% else %>
-		  <script src="<?php bloginfo('stylesheet_directory'); ?>/javascripts/all.js"></script>
+		  <script src="<?php get_stylesheet_directory_uri(); ?>/javascripts/all.js"></script>
 		<% end %>
 
 		<% if build? %>
