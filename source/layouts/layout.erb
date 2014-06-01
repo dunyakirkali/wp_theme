@@ -46,7 +46,8 @@
 		<% if build? %>
 			<?php wp_footer(); ?>
 			
-			<p id='tags'><?php the_tags(); ?></p>
+			<p id='wp-tags'><?php the_tags(); ?></p>
+			<p id='wp-link-pages'><?php wp_link_pages( $args ); ?></p>
 		<% end %>
 		
   </body>
