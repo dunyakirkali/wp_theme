@@ -10,11 +10,7 @@
 	function hw_get_background_featured_image() {
 		$thumbnail = '';
 	  if ( has_post_thumbnail() ) {
-	    $post_image_id = the_post_thumbnail();
-	    if ($post_image_id) {
-				$thumbnail = wp_get_attachment_image_src( $post_image_id, 'post-thumbnail', false);
-				if ($thumbnail) (string)$thumbnail = $thumbnail[0];
-			}
+			$thumbnail = wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) );
 	  }
     return $thumbnail;
 	}
