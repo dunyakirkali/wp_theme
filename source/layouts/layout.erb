@@ -19,7 +19,7 @@
 		<% end %>
 		
 		<% if build? %>
-			<?php wp_head(); ?> 
+			<?php wp_head(); ?>
 		<% end %>
   </head>
   
@@ -32,5 +32,9 @@
 		  <script src="<?php bloginfo('stylesheet_directory'); ?>/javascripts/all.js"></script>
 		<% end %>
 
+		<% if build? %>
+			<?php wp_footer(); ?>
+		<% end %>
+		
   </body>
 </html>
