@@ -30,7 +30,7 @@ after_configuration do
   sprockets.append_path File.join "#{root}", @bower_config["directory"]
 end
 
-set :page_count, 6
+set :page_count, 4
 
 set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
