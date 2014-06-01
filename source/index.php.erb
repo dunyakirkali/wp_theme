@@ -33,7 +33,7 @@
 				<% if development? %>
 				  <%= partial "small_menu" %>
 				<% else %>
-					<?php echo small_menu(); ?>
+					<?php hw_small_menu(); ?>
 				<% end %>
       </div>
     </div>
@@ -46,7 +46,7 @@
         <% if development? %>
 				  <%= partial "large_menu" %>
 				<% else %>
-	        <?php large_menu(); ?>
+	        <?php hw_large_menu(); ?>
 				<% end %>
       </div>
     </div>
@@ -62,7 +62,7 @@
 			<%if development? %>
   			<%= partial "medium_menu" %>
 			<% else %>
-        <?php medium_menu(); ?>
+        <?php hw_medium_menu(); ?>
 			<% end %>
     </div>    
 

@@ -1,5 +1,5 @@
 <?php 
-	function get_background_featured_image()
+	function hw_get_background_featured_image()
 	{
 		  if ( has_post_thumbnail() ) {
 		    $post_image_id = get_post_thumbnail_id($post_to_use->ID);
@@ -11,7 +11,7 @@
 	    return $thumbnail;
 	}
 
-	function medium_menu() {
+	function hw_medium_menu() {
     $ret = '';
 		$options = array(
 			'menu'            => 'top-menu',
@@ -21,7 +21,7 @@
     return wp_nav_menu($options);
   }
     	
-	function small_menu() {
+	function hw_small_menu() {
 		$args = array(
 			'sort_order' => 'ASC',
 			'sort_column' => 'menu_order',
@@ -52,6 +52,6 @@
 		  }
 			$ret .= "</div>\n";
 		}
-		return $ret;
+		return echo $ret;
 	}
 ?>
