@@ -10,11 +10,21 @@
 		  }
 	    return $thumbnail;
 	}
-	
+
+	function medium_menu() {
+    $ret = '';
+		$options = array(
+			'menu'            => 'top-menu',
+			'container_id'    => 'medium-menu-items'
+		);
+    
+    return wp_nav_menu($options);
+  }
+    	
 	function small_menu() {
 		$args = array(
 			'sort_order' => 'ASC',
-			'sort_column' => 'order',
+			'sort_column' => 'menu_order',
 			'number' => '4'
 		); 
     $pages = get_pages($args);

@@ -174,10 +174,13 @@ a {
 	padding-top: 30%;
 	width: 90%;
 	text-align: center;
-}
-
-.mobile-menu-icon.current {
-	background-color:$grey;
+  
+  &.current {
+    a {
+      border-bottom: 3px solid black;
+      padding-bottom: 7px;
+    }
+  }
 }
 
 /* medium */
@@ -194,13 +197,16 @@ a {
 }
 
 #medium-menu-items {
-	padding-right: 8px;
+  .current-menu-item {
+    display: none;
+  }
 	.menu-item {
+    color: #8f8f8f;
 		background-color:$grey;
 		height: 35px;
 		line-height: 35px;
 		width: 100%;
-		border-top: 1px solid black;
+		border-top: 1px solid #e9e9e9;
 	}
 }
 
