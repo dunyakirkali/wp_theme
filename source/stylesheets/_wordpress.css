@@ -41,6 +41,13 @@
 	display: none;
 }
 
+.bypostauthor > article .fn:before {
+	content: "\f408";
+	margin: 0 2px 0 -2px;
+	position: relative;
+	top: -1px;
+}
+
 .alignnone {
     margin: 5px 20px 20px 0;
 }
