@@ -7,6 +7,10 @@
 	
   add_theme_support('automatic-feed-links');
 	
+	if ( ! isset( $content_width ) ) {
+		$content_width = 600;
+	}
+	
 	function hw_get_background_featured_image() {
 		$thumbnail = '';
 	  if ( has_post_thumbnail() ) {

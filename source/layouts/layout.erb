@@ -25,6 +25,7 @@
 		<% end %>
 		
 		<% if build? %>
+			<?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
 			<?php wp_head(); ?>
 		<% end %>
   </head>
@@ -46,10 +47,10 @@
 		<% if build? %>
 			<?php wp_footer(); ?>
 			
-			<p id='wp-tags'><?php the_tags(); ?></p>
-			<p id='wp-link-pages'><?php wp_link_pages( $args ); ?></p>
-			<p id='wp-comments'><?php comments_template(); ?></p>
-			<p id='wp-pagelinks'><?php paginate_links(); ?></p>
+			<div id='wp-tags'><?php the_tags(); ?></div>
+			<div id='wp-link-pages'><?php wp_link_pages( $args ); ?></div>
+			<div id='wp-comments'><?php comments_template(); ?></div>
+			<div id='wp-pagelinks'><?php paginate_links(); ?></div>
 		<% end %>
 		
   </body>

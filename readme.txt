@@ -70,3 +70,12 @@ You can add a custom field to any page, called 'Page Icon'. This icon will be us
 - Firefox 29 :cake:
 - Opera 21 :cake:
 - Safari 7 :cake:
+
+---
+
+## Development
+
+HalfWhite is a middleman project. First you need to have ruby 1.9 or greater installed. 
+Run ``` gem install middleman ``` to install middleman. 
+Afterwards ``` cd ``` to the theme's directory and run ``` bundle ```.
+To run it locally run ``` middleman ```, ``` middleman build ``` to build the theme.
