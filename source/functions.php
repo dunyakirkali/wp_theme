@@ -10,6 +10,16 @@
 		  }
 	    return $thumbnail;
 	}
+	
+	function hw_large_menu() {
+  	$options = array(
+			'menu'            => 'top-menu',
+			'menu_id'         => 'large-menu',
+			'after'           => '<span>·</span>',
+		);
+    wp_nav_menu($options);
+    return true;
+  }
 
 	function hw_medium_menu() {
     $ret = '';
@@ -19,7 +29,6 @@
 		);
     
     wp_nav_menu($options);
-		
 		return true;
   }
     	
