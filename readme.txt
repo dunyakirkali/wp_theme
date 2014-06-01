@@ -26,6 +26,7 @@ You can add a custom field to any page, called 'Page Icon'. This icon will be us
 - [Tether Js (0.6.5)](http://github.hubspot.com/tether/)
 - [DropJS (0.2.9)](http://github.hubspot.com/drop/docs/welcome/)
 - Maximum 4 Pages
+- Just displays pages and not posts
 
 ---
 
