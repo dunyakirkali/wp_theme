@@ -12,7 +12,8 @@
 	  if ( has_post_thumbnail() ) {
 			$thumbnail = wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) );
 	  }
-    return $thumbnail;
+		echo $thumbnail;
+    return true;
 	}
 	
 	function hw_large_menu() {
