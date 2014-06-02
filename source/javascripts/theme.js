@@ -6,7 +6,7 @@ $(document).ready(function() {
 	  content: document.querySelector('#medium-menu-items'),
 	  position: 'bottom left',
 	  openOn: 'click',
-		classes: 'medium-3',
+		classes: 'show-for-medium',
 		remove: true
 	});
 
@@ -20,5 +20,18 @@ $(document).ready(function() {
 	  $('#second').scrollTop(0);
 		event.preventDefault();
 	});
+	
+	drop.on('open', function (event) {
+		resize_drop();
+		
+	});
+	
+	window.onresize = function(event) {
+	  resize_drop();
+	};
+	
+	function resize_drop() {
+		$('.drop-content').css('width', $('#medium-menu').width());
+	}
 
 });
