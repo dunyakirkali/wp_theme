@@ -48,24 +48,40 @@ You can add a custom field to any page, called 'Page Icon'. This icon will be us
 
 ### Windows
 
+#### 8.1
+
+- IE 11 :cake:
+
+#### 8
+
+- IE Desktop 10 :cake:
+
 #### 7
 
-- Chrome 34 :cake:
+- Chrome 31 :cake:
+- IE 8 :warning:
+- IE 9 :cake:
+- IE 10 :cake:
 - IE 11 :cake:
-- Opera 21 :cake:
-- Firefox 29 :cake:
+- Opera 12.16 :cake:
+- Firefox 25 :cake:
 - Safari 5.1 :cake:
 
 #### XP
 
-- Chrome 34 :cake:
-- IE 8 :warning: 
-- Opera 21 :cake:
-- Firefox 29 :cake:
+- Chrome 31  :cake:
+- Opera 12.16 :cake:
+- Firefox 25 :cake:
 - Safari 5.1 :cake:
 
 ### Mac
 #### Mavericks
+- Chrome 35 :cake:
+- Firefox 29 :cake:
+- Opera 21 :cake:
+- Safari 7 :cake:
+
+#### Mountain Lion
 - Chrome 34 :cake:
 - Firefox 29 :cake:
 - Opera 21 :cake:
